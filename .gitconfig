@@ -1,0 +1,11 @@
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[user]
+	name = Parsa
+	email = parsa.poorsh@gmail.com
+	signingkey = FFB2FE0B3E3CD970
+[commit]
+	gpgsign = true
