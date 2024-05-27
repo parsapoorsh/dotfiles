@@ -71,7 +71,12 @@ if [ "$color_prompt" = yes ]; then
     SC_CYAN="$(tput setaf 6)"
     SC_WHITE="$(tput setaf 7)"
 
-    PS1='${debian_chroot:+($debian_chroot)}\[$SC_BOLD$SC_GREEN\]\u@\h\[$SC_COLOR_OFF\]:\[$SC_BOLD$SC_BLUE\]\w\[$SC_COLOR_OFF\]\$ '
+    if [ "$(id -u)" -eq 0 ]; then  # If root user
+        PS1_COLOR1="$SC_RED"
+    else
+        PS1_COLOR1="$SC_YELLOW"
+    fi
+    PS1='${debian_chroot:+($debian_chroot)}\[$SC_BOLD$PS1_COLOR1\]\u@\h\[$SC_COLOR_OFF\]:\[$SC_BOLD$SC_BLUE\]\w\[$SC_COLOR_OFF\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
