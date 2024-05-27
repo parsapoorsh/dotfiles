@@ -57,7 +57,21 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    SC_COLOR_OFF="$(tput sgr0)"
+
+    SC_BOLD="$(tput bold)"
+    SC_UNDERLINE="$(tput smul)"
+
+    SC_BLACK="$(tput setaf 0)"
+    SC_RED="$(tput setaf 1)"
+    SC_GREEN="$(tput setaf 2)"
+    SC_YELLOW="$(tput setaf 3)"
+    SC_BLUE="$(tput setaf 4)"
+    SC_PURPLE="$(tput setaf 5)"
+    SC_CYAN="$(tput setaf 6)"
+    SC_WHITE="$(tput setaf 7)"
+
+    PS1='${debian_chroot:+($debian_chroot)}\[$SC_BOLD$SC_GREEN\]\u@\h\[$SC_COLOR_OFF\]:\[$SC_BOLD$SC_BLUE\]\w\[$SC_COLOR_OFF\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
