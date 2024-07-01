@@ -137,5 +137,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
