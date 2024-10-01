@@ -4,7 +4,7 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 [user]
-	name = Parsa
+	name = Parsa Poorshikhian
 	email = parsa.poorsh@gmail.com
 	signingkey = FFB2FE0B3E3CD970
 [commit]
@@ -15,3 +15,13 @@
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
+[core]
+        abbrev = 12
+[pretty]
+        fixes = Fixes: %h (\"%s\")
+[sendemail]
+  ; setup for using git send-email; prompts for password
+  smtpuser = parsa.poorsh@gmail.com
+  smtpserver = smtp.googlemail.com
+  smtpencryption = tls
+  smtpserverport = 587
