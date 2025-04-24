@@ -139,3 +139,6 @@ if ! shopt -oq posix; then
 fi
 
 export CCACHE_DIR=~/.ccache
+export BROWSER=firefox
+
+fastfetch
