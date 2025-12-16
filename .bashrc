@@ -199,4 +199,4 @@ if [ -d "$PYENV_ROOT/bin" ]; then
     fi
 fi
 
-fastfetch
+cat yes-man.txt | fastfetch --file-raw -
