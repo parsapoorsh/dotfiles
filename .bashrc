@@ -147,6 +147,17 @@ if [ -d "$HOME/.lmstudio/bin" ]; then
     export PATH="$PATH:$HOME/.lmstudio/bin"
 fi
 
+# alias get_idf='. $HOME/esp/esp-idf/export.sh'
+get_idf() {
+    local idf_script="$HOME/esp/esp-idf/export.sh"
+    if [ -f "$idf_script" ]; then
+        . "$idf_script"
+    else
+        echo "ESP-IDF not found: $idf_script does not exist."
+        echo "Please install ESP-IDF or check the path."
+    fi
+}
+
 export CCACHE_DIR=~/.ccache
 export BROWSER=firefox
 # GTK stuff
