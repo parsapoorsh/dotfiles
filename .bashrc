@@ -158,6 +158,27 @@ get_idf() {
     fi
 }
 
+conda_init() {
+    local conda_base="$HOME/anaconda3"
+    local conda_script="$conda_base/etc/profile.d/conda.sh"
+    local conda_bin="$conda_base/bin"
+
+    if [ -x "$conda_bin/conda" ]; then
+        # Preferred: use conda hook if available
+        __conda_setup="$("$conda_bin/conda" 'shell.bash' 'hook' 2>/dev/null)"
+        if [ $? -eq 0 ]; then
+            eval "$__conda_setup"
+        elif [ -f "$conda_script" ]; then
+            . "$conda_script"
+        else
+            export PATH="$conda_bin:$PATH"
+        fi
+        unset __conda_setup
+    else
+        echo "Conda not found: $conda_base not installed or conda executable missing."
+    fi
+}
+
 export CCACHE_DIR=~/.ccache
 export BROWSER=firefox
 # GTK stuff
