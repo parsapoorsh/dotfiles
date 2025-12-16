@@ -138,6 +138,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+if [ -f /usr/bin/bashacks ]; then
+    . /usr/bin/bashacks
+fi
+
 export CCACHE_DIR=~/.ccache
 export BROWSER=firefox
 
