@@ -142,6 +142,11 @@ if [ -f /usr/bin/bashacks ]; then
     . /usr/bin/bashacks
 fi
 
+# Added by LM Studio CLI (lms)
+if [ -d "$HOME/.lmstudio/bin" ]; then
+    export PATH="$PATH:$HOME/.lmstudio/bin"
+fi
+
 export CCACHE_DIR=~/.ccache
 export BROWSER=firefox
 # GTK stuff
