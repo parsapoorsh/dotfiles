@@ -144,5 +144,8 @@ fi
 
 export CCACHE_DIR=~/.ccache
 export BROWSER=firefox
+# GTK stuff
+export $(dbus-launch)
+export SAL_USE_VCLPLUGIN=gtk
 
 fastfetch
