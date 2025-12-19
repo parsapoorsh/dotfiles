@@ -199,4 +199,5 @@ if [ -d "$PYENV_ROOT/bin" ]; then
     fi
 fi
 
-cat yes-man.txt | fastfetch --file-raw -
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cat $script_dir/yes-man.txt | fastfetch --file-raw -
