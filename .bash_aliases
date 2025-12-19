@@ -19,3 +19,4 @@ alias pyt-dlp='proxychains yt-dlp --cookies-from-browser $BROWSER'
 # LLM CLIs
 alias psgpt='proxychains sgpt'
 alias pgemini='proxychains gemini'
+alias pcodex='proxychains pcodex'
