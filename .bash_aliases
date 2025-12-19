@@ -7,10 +7,15 @@ alias ffmpeg='ffmpeg -hide_banner'
 alias ffplay='ffplay -hide_banner'
 alias ffprobe='ffprobe -hide_banner'
 
+# it's obvious
 alias yt-dlp='yt-dlp --cookies-from-browser $BROWSER'
 
-# proxy stuff
+# make proxychains quiet
 alias proxychains='proxychains -q'
-alias psgpt='proxychains sgpt'
+
+# proxy stuff
+# downloader CLIs
 alias pyt-dlp='proxychains yt-dlp --cookies-from-browser $BROWSER'
+# LLM CLIs
+alias psgpt='proxychains sgpt'
 alias pgemini='proxychains gemini'
