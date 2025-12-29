@@ -71,6 +71,7 @@ if [ "$color_prompt" = yes ]; then
     else
         PS1_COLOR1="$SC_YELLOW"
     fi
+    # fallout colors: yellow + blue for cwd
     PS1='\[$SC_BOLD$PS1_COLOR1\]\u@\h\[$SC_COLOR_OFF\]:\[$SC_BOLD$SC_BLUE\]\w\[$SC_COLOR_OFF\]\$ '
 else
     PS1='\u@\h:\w\$ '
