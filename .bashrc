@@ -143,6 +143,9 @@ if [ -f /usr/bin/bashacks ]; then
     . /usr/bin/bashacks
 fi
 
+# Add system binaries to PATH
+export PATH="/sbin:/usr/sbin:$PATH"
+
 # Added by LM Studio CLI (lms)
 if [ -d "$HOME/.lmstudio/bin" ]; then
     export PATH="$PATH:$HOME/.lmstudio/bin"
