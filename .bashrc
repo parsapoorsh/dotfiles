@@ -151,6 +151,11 @@ if [ -d "$HOME/.lmstudio/bin" ]; then
     export PATH="$PATH:$HOME/.lmstudio/bin"
 fi
 
+# for cargo-deb
+if [ -d "$HOME/.cargo/bin" ]; then
+    export PATH="$PATH:$HOME/.cargo/bin"
+fi
+
 # alias get_idf='. $HOME/esp/esp-idf/export.sh'
 get_idf() {
     local idf_script="$HOME/esp/esp-idf/export.sh"
