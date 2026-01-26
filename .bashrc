@@ -124,8 +124,8 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-if [ -f ~/.bash_aliases_private ]; then
-    . ~/.bash_aliases_private
+if [ -f ~/.bashrc_private ]; then
+    . ~/.bashrc_private
 fi
 
 # enable programmable completion features (you don't need to enable
