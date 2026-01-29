@@ -156,6 +156,10 @@ if [ -d "$HOME/.cargo/bin" ]; then
     export PATH="$PATH:$HOME/.cargo/bin"
 fi
 
+if [ -d "$HOME/go/bin/" ]; then
+    export PATH="$PATH:$HOME/go/bin/"
+fi
+
 # alias get_idf='. $HOME/esp/esp-idf/export.sh'
 get_idf() {
     local idf_script="$HOME/esp/esp-idf/export.sh"
