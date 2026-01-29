@@ -160,6 +160,11 @@ if [ -d "$HOME/go/bin/" ]; then
     export PATH="$PATH:$HOME/go/bin/"
 fi
 
+# soar package manger
+if [ -d "$HOME/.local/share/soar/bin/" ]; then
+    export PATH="$PATH:$HOME/.local/share/soar/bin/"
+fi
+
 # alias get_idf='. $HOME/esp/esp-idf/export.sh'
 get_idf() {
     local idf_script="$HOME/esp/esp-idf/export.sh"
