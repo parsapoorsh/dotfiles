@@ -1,0 +1,55 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep:*)",
+      "Bash(cat:*)",
+      "Bash(ls *)",
+      "Bash(cd:*)",
+      "Bash(git mv:*)",
+      "Bash(git diff *)",
+      "Bash(git status)",
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(git commit:*)",
+      "Skill(commit-commands:commit)",
+      "Bash(docker compose *)",
+      "mcp__ide__getDiagnostics",
+      "mcp__jetbrains__list_directory_tree",
+      "mcp__jetbrains__get_file_problems"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(sudo *)"
+    ],
+    "defaultMode": "acceptEdits"
+  },
+  "model": "sonnet",
+  "enabledPlugins": {
+    "context7@claude-plugins-official": false,
+    "code-review@claude-plugins-official": false,
+    "security-guidance@claude-plugins-official": true,
+    "commit-commands@claude-plugins-official": true,
+    "pyright-lsp@claude-plugins-official": true
+  },
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true,
+    "network": {
+      "allowedDomains": [
+        "github.com",
+        "*.pypi.org",
+        "*.npmjs.org",
+        "registry.yarnpkg.com"
+      ],
+      "allowUnixSockets": [
+        "/var/run/docker.sock"
+      ],
+      "allowLocalBinding": true
+    },
+    "excludedCommands": [
+      "git",
+      "docker"
+    ]
+  },
+  "effortLevel": "medium"
+}
