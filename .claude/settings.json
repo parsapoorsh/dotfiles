@@ -24,6 +24,19 @@
     "defaultMode": "acceptEdits"
   },
   "model": "sonnet",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/claude-code-sandbox-bash-tool-issue-17087.sh"
+          }
+        ]
+      }
+    ]
+  },
   "enabledPlugins": {
     "context7@claude-plugins-official": false,
     "code-review@claude-plugins-official": false,
