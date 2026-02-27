@@ -53,6 +53,7 @@ SPURIOUS_FILES=(
     objects
     refs
     hooks
+    config
 )
 
 # Read JSON input from stdin and parse cwd
