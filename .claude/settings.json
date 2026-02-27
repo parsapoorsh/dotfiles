@@ -38,11 +38,11 @@
     ]
   },
   "enabledPlugins": {
-    "context7@claude-plugins-official": false,
     "code-review@claude-plugins-official": false,
     "security-guidance@claude-plugins-official": true,
     "commit-commands@claude-plugins-official": true,
-    "pyright-lsp@claude-plugins-official": true
+    "pyright-lsp@claude-plugins-official": true,
+    "code-simplifier@claude-plugins-official": true
   },
   "sandbox": {
     "enabled": true,
