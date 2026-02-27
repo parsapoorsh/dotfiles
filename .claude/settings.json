@@ -52,7 +52,9 @@
         "github.com",
         "*.pypi.org",
         "*.npmjs.org",
-        "registry.yarnpkg.com"
+        "registry.yarnpkg.com",
+        "127.0.0.1",
+        "localhost"
       ],
       "allowUnixSockets": [
         "/var/run/docker.sock"
