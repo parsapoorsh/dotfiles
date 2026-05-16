@@ -65,5 +65,12 @@
       "docker"
     ]
   },
-  "effortLevel": "medium"
+  "effortLevel": "low",
+  "awaySummaryEnabled": false,
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "dark",
+  "editorMode": "normal",
+  "verbose": true,
+  "preferredNotifChannel": "terminal_bell",
+  "remoteControlAtStartup": false,
 }
