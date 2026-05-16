@@ -25,6 +25,8 @@ alias psgpt='proxychains sgpt'
 alias pgemini='proxychains gemini'
 alias pcodex='proxychains codex'
 
+alias claude="TZ=Asia/Istanbul claude --allow-dangerously-skip-permissions"
+
 # ssh
 alias ssh='ssh -o Compression=yes'
 alias autossh='autossh -o Compression=yes'
