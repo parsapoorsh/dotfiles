@@ -8,7 +8,7 @@ alias ffplay='ffplay -hide_banner'
 alias ffprobe='ffprobe -hide_banner'
 
 # it's obvious
-alias yt-dlp='yt-dlp --cookies-from-browser $BROWSER --js-runtimes node --remote-components ejs:github'
+alias yt-dlp='yt-dlp --cookies-from-browser $BROWSER --js-runtimes node --remote-components ejs:github --continue'
 
 # make proxychains quiet
 alias proxychains='proxychains -q'
