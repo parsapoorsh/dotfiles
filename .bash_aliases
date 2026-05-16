@@ -24,3 +24,7 @@ alias pyt-dlp='proxychains yt-dlp --cookies-from-browser $BROWSER --js-runtimes 
 alias psgpt='proxychains sgpt'
 alias pgemini='proxychains gemini'
 alias pcodex='proxychains codex'
+
+# ssh
+alias ssh='ssh -o Compression=yes'
+alias autossh='autossh -o Compression=yes'
