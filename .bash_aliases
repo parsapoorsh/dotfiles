@@ -13,6 +13,9 @@ alias yt-dlp='yt-dlp --cookies-from-browser $BROWSER --js-runtimes node --remote
 # make proxychains quiet
 alias proxychains='proxychains -q'
 
+# download w/ file name
+alias wget='wget --content-disposition'
+
 # proxy stuff
 # downloader CLIs
 alias pyt-dlp='proxychains yt-dlp --cookies-from-browser $BROWSER --js-runtimes node --remote-components ejs:github'
