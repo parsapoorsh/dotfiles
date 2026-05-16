@@ -15,7 +15,8 @@ alias proxychains='proxychains -q'
 
 # proxy stuff
 # downloader CLIs
-alias pyt-dlp='proxychains yt-dlp --cookies-from-browser $BROWSER'
+alias pyt-dlp='proxychains yt-dlp --cookies-from-browser $BROWSER --js-runtimes node --remote-components ejs:github'
+
 # LLM CLIs
 alias psgpt='proxychains sgpt'
 alias pgemini='proxychains gemini'
