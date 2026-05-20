@@ -166,7 +166,7 @@ if [ -d "$HOME/.local/share/soar/bin/" ]; then
 fi
 
 get_idf() {
-    local idf_script="$HOME/esp/esp-idf/export.sh"
+    local idf_script="$HOME/.espressif/tools/activate_idf_v6.0.1.sh"
     if [ -f "$idf_script" ]; then
         . "$idf_script"
     else
