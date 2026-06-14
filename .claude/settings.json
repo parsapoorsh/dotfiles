@@ -72,6 +72,7 @@
   "editorMode": "normal",
   "verbose": true,
   "preferredNotifChannel": "terminal_bell",
+  "autoCompactEnabled": true,
   "remoteControlAtStartup": false,
   "skipAutoPermissionPrompt": true
 }
