@@ -169,6 +169,12 @@ if [ -f "$HOME/.cargo/env" ]; then
     . "$HOME/.cargo/env"
 fi
 
+# bun
+if [ -d "$HOME/.bun/bin" ]; then
+    export BUN_INSTALL="$HOME/.bun"
+    export PATH="$BUN_INSTALL/bin:$PATH"
+fi
+
 get_idf() {
     local idf_script="$HOME/.espressif/tools/activate_idf_v6.0.1.sh"
     if [ -f "$idf_script" ]; then
