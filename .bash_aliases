@@ -7,18 +7,15 @@ alias ffmpeg='ffmpeg -hide_banner'
 alias ffplay='ffplay -hide_banner'
 alias ffprobe='ffprobe -hide_banner'
 
-# it's obvious
-alias yt-dlp='yt-dlp --cookies-from-browser $BROWSER --js-runtimes node --remote-components ejs:github --continue'
-
 # make proxychains quiet
 alias proxychains='proxychains -q'
 
 # download w/ file name
 alias wget='wget --content-disposition'
 
-# proxy stuff
 # downloader CLIs
-alias pyt-dlp='proxychains yt-dlp --cookies-from-browser $BROWSER --js-runtimes node --remote-components ejs:github'
+alias yt-dlp='yt-dlp --cookies-from-browser $BROWSER --js-runtimes node --remote-components ejs:github -R infinite --fragment-retries infinite --extractor-retries infinite --continue'
+alias pyt-dlp='proxychains yt-dlp --cookies-from-browser $BROWSER --js-runtimes node --remote-components ejs:github -R infinite --fragment-retries infinite --extractor-retries infinite --continue'
 
 # LLM CLIs
 alias psgpt='proxychains sgpt'
