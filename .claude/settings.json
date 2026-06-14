@@ -35,6 +35,14 @@
     "rust-analyzer-lsp@claude-plugins-official": false,
     "document-skills@anthropic-agent-skills": false
   },
+  "extraKnownMarketplaces": {
+    "anthropic-agent-skills": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/skills"
+      }
+    }
+  },
   "sandbox": {
     "enabled": true,
     "autoAllowBashIfSandboxed": true,
