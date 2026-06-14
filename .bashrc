@@ -165,6 +165,10 @@ if [ -d "$HOME/.local/share/soar/bin/" ]; then
     export PATH="$PATH:$HOME/.local/share/soar/bin/"
 fi
 
+if [ -f "$HOME/.cargo/env" ]; then
+    . "$HOME/.cargo/env"
+fi
+
 get_idf() {
     local idf_script="$HOME/.espressif/tools/activate_idf_v6.0.1.sh"
     if [ -f "$idf_script" ]; then
