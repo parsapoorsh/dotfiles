@@ -23,6 +23,7 @@ alias pgemini='proxychains gemini'
 alias pcodex='proxychains codex'
 
 alias claude="TZ=Asia/Istanbul claude --allow-dangerously-skip-permissions"
+alias grok="TZ=Asia/Istanbul grok"
 
 # ssh
 alias ssh='ssh -o Compression=yes'
