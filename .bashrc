@@ -151,11 +151,7 @@ if [ -d "$HOME/.lmstudio/bin" ]; then
     export PATH="$PATH:$HOME/.lmstudio/bin"
 fi
 
-# for cargo-deb
-if [ -d "$HOME/.cargo/bin" ]; then
-    export PATH="$PATH:$HOME/.cargo/bin"
-fi
-
+# go
 if [ -d "$HOME/go/bin/" ]; then
     export PATH="$PATH:$HOME/go/bin/"
 fi
@@ -165,8 +161,14 @@ if [ -d "$HOME/.local/share/soar/bin/" ]; then
     export PATH="$PATH:$HOME/.local/share/soar/bin/"
 fi
 
+# cargo
 if [ -f "$HOME/.cargo/env" ]; then
     . "$HOME/.cargo/env"
+fi
+
+# for cargo-deb
+if [ -d "$HOME/.cargo/bin" ]; then
+    export PATH="$PATH:$HOME/.cargo/bin"
 fi
 
 # bun
