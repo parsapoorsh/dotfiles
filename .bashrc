@@ -175,6 +175,14 @@ if [ -d "$HOME/.bun/bin" ]; then
     export PATH="$BUN_INSTALL/bin:$PATH"
 fi
 
+# Grok CLI
+if [ -d "$HOME/.grok/bin" ]; then
+    export PATH="$HOME/.grok/bin:$PATH"
+fi
+if [ -r "$HOME/.grok/completions/bash/grok.bash" ]; then
+    source "$HOME/.grok/completions/bash/grok.bash"
+fi
+
 get_idf() {
     local idf_script="$HOME/.espressif/tools/activate_idf_v6.0.1.sh"
     if [ -f "$idf_script" ]; then
